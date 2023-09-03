@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+<script defer src="main.js"></script></head>
+<body>
+    <div id="content">
+        <h1>Welcome to Your Todo list</h1>
+        <div class="container">
+            <div class="projects">
+                <h2>Projects</h2>
+                <ul id="project-list">
+                    <!-- Project items will be added here -->
+                </ul>
+                <select id="projectSelection"></select>
+                <form id="projectForm">
+                    <label>New Project:</label>
+                    <input type="text" id="projectInput">
+                    <button type="submit">Add Project</button>
+                </form>
+            </div>
+            <form id="todoForm">
+                <label>Title:</label>
+                <input type="text" id="titleInput">
+                <label>Description:</label>
+                <input type="text" id="descriptionInput">
+                <label>Due Date:</label>
+                <input type="date" id="dueDateInput">
+                <label>Notes:</label>
+                <input type="text" id="notesInput">
+                <select id="selectElement">
+                    <option value="urgent">urgent</option>
+                    <option value="normal">normal</option>
+                </select>
+                <button type="submit" id="addButton">Add Todo</button>
+            </form>
+        </div>
+        <div id="todo-list">
+            <!-- Todo items will be added here -->
+        </div>
+        <div id="todo-details">
+            <!-- Todo details will be added here -->
+        </div>
+    </div>
+    <script src="projectManager.js"></script>
+    <script src="domManager.js"></script>
+    <script src="loadPage.js"></script>
+</body>
+</html>
